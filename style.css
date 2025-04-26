@@ -1,0 +1,158 @@
+
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 20%, 90%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator{
+    max-width: 400px;
+    width:90%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: hsl(0, 10%, 10%);
+    border-radius: 40px;
+    padding: 20px;
+    
+}
+
+#display{
+width:100%;
+font-size: 3rem;
+text-align: left;
+background-color: whitesmoke;
+color:hsl(0, 0%, 10%);
+border: none;
+border-radius: 40px;
+padding: 15px;
+box-sizing: border-box;
+margin-top:10px;
+margin-bottom: 20px;
+}
+
+button{
+width: 70px;
+height: 70px;
+border:none;
+border-radius: 50px;
+padding: 10px;
+margin: 5px;
+background-color:hsl(0, 0%, 30%) ;
+font-weight:normal;
+font-size: 24px;
+color:hsl(0, 0%, 90%);
+transition:background-color 0.3s;
+
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+    cursor: pointer;
+}
+
+button:active{
+    background-color: hsl(0, 0%, 60%);
+    cursor: pointer;
+}
+
+.operand{
+    background-color:hsl(234, 100%, 64%);
+    font: size 30px;
+    font-weight: bold;
+}
+
+.operand:hover{
+    background-color:hsl(234, 97%, 70%) ;
+
+}
+
+.operand:active{
+    background-color:hsl(234, 97%, 80%);
+}
+
+
+.keys{
+    margin:5px;
+    height:75%;
+    margin-top: 10px;
+}
+
+
+
+.operandsAndOperators{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap:10px;
+
+}
+
+#row1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+   
+}
+
+#row3{
+  
+    display: flex;
+    justify-content: center;
+    gap:12px;
+    width:100%;
+    margin-top: 5px;
+    
+}
+
+#clearBtn,#deleteBtn {
+    flex:1;
+    color:white;
+    font-weight: bold;
+    background-color: hsl(16, 97%, 55%);
+}
+
+#deleteBtn:hover {
+    background-color: hsl(16, 97%, 62%);
+}
+
+#deleteBtn:active {
+    background-color: hsl(16, 97%, 75%);
+}
+
+#clearBtn:hover {
+    background-color: hsl(16, 97%, 62%);
+}
+
+#clearBtn:active {
+    background-color: hsl(16, 97%, 75%);
+}
+
+
+#equalBtn {
+    flex:1;
+    color:white;
+    font-weight: bold;
+   
+}
+
+
+@media screen and (max-width:600px){
+    button{
+        width:60px;
+        height:60px;
+        font-size: 20px;
+    }
+
+    .operandsAndOperators{
+        gap:3px;
+        grid-template-columns: repeat(3,1fr);
+    }
+ 
+ 
+}
+
